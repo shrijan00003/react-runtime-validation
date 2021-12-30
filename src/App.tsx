@@ -6,7 +6,8 @@ export function DataList(props: { data: Data }) {
     return <div className="error-block"> Data not found </div>;
   }
 
-  const capitalize = (name: string) => name[0].toUpperCase() + name.slice(1);
+  const capitalize = (name: string) =>
+    (name[0] || "").toUpperCase() + name.slice(1);
 
   return (
     <ul>
